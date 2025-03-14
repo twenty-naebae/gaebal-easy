@@ -47,12 +47,6 @@ dependencies {
 	//kafka
 	implementation 'org.springframework.kafka:spring-kafka'
 
-	//QueryDSL
-	implementation 'com.querydsl:querydsl-apt:5.0.0'
-	implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
-	implementation 'com.querydsl:querydsl-core:5.0.0'
-
-	annotationProcessor "com.querydsl:querydsl-apt:${dependencyManagement.importedProperties['querydsl.version']}:jakarta"
 
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
